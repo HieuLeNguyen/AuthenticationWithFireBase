@@ -41,7 +41,7 @@ extension UIViewController {
         rectangleLayer.path = rectanglePath.cgPath
         rectangleLayer.fillColor = nil
         rectangleLayer.lineWidth = 2
-        rectangleLayer.strokeColor = UIColor(red: 248/255, green: 249/255, blue: 255/255, alpha: 1).cgColor
+        rectangleLayer.strokeColor = UIColor.second.cgColor
         
         // FIXME: Lỗi Khi xoay hình
         // Đặt vị trí (tính trung tâm)
@@ -67,11 +67,11 @@ extension UIViewController {
         let circlePath = UIBezierPath(ovalIn: CGRect(x: x, y: y, width: diameter, height: diameter))
         circleLayer.path = circlePath.cgPath
         if fillColor {
-            circleLayer.fillColor = UIColor(red: 248/255, green: 249/255, blue: 255/255, alpha: 1).cgColor
+            circleLayer.fillColor = UIColor.second.cgColor
         } else {
             circleLayer.fillColor = nil
             circleLayer.lineWidth = 2
-            circleLayer.strokeColor = UIColor(red: 248/255, green: 249/255, blue: 255/255, alpha: 1).cgColor
+            circleLayer.strokeColor = UIColor.second.cgColor
         }
         
         view.layer.insertSublayer(circleLayer, at: 0)
