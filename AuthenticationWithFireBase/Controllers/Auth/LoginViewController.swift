@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBackground()
+        BM.shared.addBackground(view)
     }
     
 

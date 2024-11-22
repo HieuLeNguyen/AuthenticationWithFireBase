@@ -12,7 +12,7 @@ class WelcomeViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBackground()
+        BM.shared.addBackground(view)
     }
     
     @IBAction func tapLoginButton(_ sender: Any) {
